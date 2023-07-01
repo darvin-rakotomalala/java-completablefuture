@@ -1,0 +1,79 @@
+{
+	"info": {
+		"_postman_id": "959fb1cd-6148-41a7-95b8-b404852d0972",
+		"name": "api-rest-CF",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "updateCustomer",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/customers?customerId=CUST-1&phoneNumber=+261349765273",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"customers"
+					],
+					"query": [
+						{
+							"key": "customerId",
+							"value": "CUST-1"
+						},
+						{
+							"key": "phoneNumber",
+							"value": "+261349765273"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cFGetCustomerById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/customers/CUST-1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"customers",
+						"CUST-1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cFGetCustomerByIdUsingAllOf",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/customers/all-of/CUST-1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"customers",
+						"all-of",
+						"CUST-1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
